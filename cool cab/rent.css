@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background/bg-rent.jpg) center/cover fixed no-repeat;
+    min-height: 100vh;   
+}
+
+.header h3{
+    padding-top:90px;
+    padding-left:40px;
+    font-size: 50px;
+    color:#ee9b00;
+}
+
+.car_types{
+    display:flex;
+    flex-wrap: wrap;
+    max-width:140vw;
+    margin-bottom:4vw;
+    padding:2.5vw;
+
+}
+
+.car_types input{
+    display:none;
+}
+
+.car_types label{
+    padding: 1.5vw;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    font-weight: bold;
+    color: aliceblue;
+    transition: 1s ease;
+    
+}
+
+.car_types #label1{
+    border-top-left-radius: 10px;
+}
+
+.car_types #label3{
+    border-top-right-radius: 10px;
+}
+
+.car_types label:hover{
+    color: #ee9b00;
+    transition: .3s ease ;
+    cursor: pointer;
+}
+
+.car_types .tab{
+    text-align: center;
+    padding: 2vw;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    order : 1;
+    height:30vw;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display:none;
+    width: 100vw;
+}
+
+.car_types img{
+    height:9vw;
+    width:16vw;    
+}
+
+.car_types .tab .img1{
+    font-size: 25px;
+    color:#fff;
+    float:left;
+    height: 30vw;
+    width: 25vw;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    margin-right: 3vw;
+}
+
+.car_types .tab .img1 p{
+    text-align: left;
+    padding:1vw;
+    font-weight: bolder;
+}
+
+.car_types .tab .img1 p:hover{
+    color:#ee9b00;
+    transition: .3s ease;
+}
+
+.car_types .tab .img1 button{
+    margin-top:40px;
+    padding:10px 50px;
+    background-color: rgba(0,0,0,0.2);
+    border-width: 2px;
+    border-color: #ee9b00;
+    border-style: solid;
+    font-weight: bold;
+    color:#fff;
+    box-shadow: inset 0 0 0 0 #ee9b00;
+    text-decoration: none;
+    transition: ease-out 0.5s;
+}
+
+
+
+.car_types .tab .img1 button:hover{
+    box-shadow: inset 200px 0 0 0 #ee9b00;
+    position:relative;
+    color:white;   
+    cursor: pointer;     
+}
+.car_types .tab .img1 img{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.car_types input[type = 'radio']:checked + label + .tab{
+    display:block;
+}
+
+.car_types input[type = "radio"]:checked + label{
+    background-color: #fff;
+    color: black;
+}
+
+
+
